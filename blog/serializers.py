@@ -1,0 +1,9 @@
+from django.conf.urls import url, include
+from .models import BlogPost
+from rest_framework import serializers
+
+class BlogPostSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = BlogPost
+        fields = '__all__'
+        lookup_field = 'slug'
