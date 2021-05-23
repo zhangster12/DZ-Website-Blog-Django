@@ -1,12 +1,14 @@
-from django.shortcuts import render
-from rest_framework.response import Response
-from rest_framework import permissions
-from rest_framework.views import APIView
-from rest_framework.generics import ListAPIView, RetrieveAPIView
 from blog.models import BlogPost
 from blog.serializers import BlogPostSerializer
+from django.http import HttpResponse
+from django.shortcuts import render
+from rest_framework import permissions
+from rest_framework.generics import ListAPIView, RetrieveAPIView
 
 # Create your views here.
+def home(*args, **kwargs):
+    return HttpResponse('App is running.')
+
 class BlogPostListView(ListAPIView):
     queryset = BlogPost.objects.order_by('-date_created')
     serializer_class = BlogPostSerializer
