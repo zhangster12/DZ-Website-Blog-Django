@@ -10,3 +10,10 @@ vir_env/Scripts/activate
 ```
 deactivate
 ```
+
+## To leave virtual environment, enter the following line:
+```
+git add .
+git commit -am "make it better"
+git push heroku master
+```
