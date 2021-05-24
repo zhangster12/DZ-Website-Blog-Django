@@ -14,7 +14,6 @@ from pathlib import Path
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-#BASE_DIR = Path(__file__).resolve().parent.parent
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
@@ -27,7 +26,6 @@ SECRET_KEY = 'django-insecure-#(z2i-s$3&zd_o37ch+ci8t$rdlg^vhvr*x-6=lwo-@bwo65g6
 DEBUG = True
 
 ALLOWED_HOSTS = ['daniel-zhang-blog.herokuapp.com', '127.0.0.1']
-
 
 # Application definition
 
@@ -80,23 +78,13 @@ WSGI_APPLICATION = 'my_blog.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'my_blog_db',
-#         'USER': 'postgres',
-#         'PASSWORD': 'welc0mE*',
-#         'HOST': 'localhost',
-#         'PORT': '5432'
-#     }
-# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd7ap0mt60nl68m',
-        'USER': 'dnkfqmyyrxglmu',
-        'PASSWORD': '71dee66dcab5919e034ecaedb2a4af375d25e95ced5c5991b75e0a920fb5b1fa',
-        'HOST': 'ec2-18-214-140-149.compute-1.amazonaws.com',
+        'NAME': 'd4029kf2q8jvuj',
+        'USER': 'jfchkpalaiszfp',
+        'PASSWORD': '5342bbdcd000e2c107092100d28b7d25da61e6585a84770afea918ce98f42f74',
+        'HOST': 'ec2-52-86-25-51.compute-1.amazonaws.com',
         'PORT': '5432'
     }
 }
@@ -119,7 +107,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
@@ -132,7 +119,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
