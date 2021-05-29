@@ -1,5 +1,4 @@
 .vscode/
-my_blog/__pycache__
 blog/__pycache__
 blog/migrations
-my_blog/secrets.py
+my_blog/__pycache__
