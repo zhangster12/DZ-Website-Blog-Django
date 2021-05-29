@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+from .secret import secret_key, allowed_host, name, user, password, host
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -20,12 +21,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-#(z2i-s$3&zd_o37ch+ci8t$rdlg^vhvr*x-6=lwo-@bwo65g6'
+SECRET_KEY = secret_key
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['daniel-zhang-blog.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = [allowed_host, '127.0.0.1']
 
 # Application definition
 
@@ -81,10 +82,10 @@ WSGI_APPLICATION = 'my_blog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd4029kf2q8jvuj',
-        'USER': 'jfchkpalaiszfp',
-        'PASSWORD': '5342bbdcd000e2c107092100d28b7d25da61e6585a84770afea918ce98f42f74',
-        'HOST': 'ec2-52-86-25-51.compute-1.amazonaws.com',
+        'NAME': name,
+        'USER': user,
+        'PASSWORD': password,
+        'HOST': host,
         'PORT': '5432'
     }
 }
