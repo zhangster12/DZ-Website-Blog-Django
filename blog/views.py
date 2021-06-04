@@ -1,7 +1,6 @@
 from blog.models import BlogPost
 from blog.serializers import BlogPostSerializer
 from django.http import HttpResponse
-from django.shortcuts import render
 from rest_framework import permissions
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 
