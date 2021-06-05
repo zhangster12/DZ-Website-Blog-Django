@@ -1,5 +1,5 @@
-from django.urls import path
 from .views import BlogPostListView, BlogPostDetailView, BlogPostFeaturedView
+from django.urls import path
 
 urlpatterns = [
     path('', BlogPostListView.as_view()),
