@@ -1,24 +1,24 @@
 # My-App-Blog
 Setup framework with Django for my blog of my website.
 
-## To activate virtual environment, use the line:
+### Activate virtual environment:
 ```
 vir_env/Scripts/activate
 ```
 
-## To leave virtual environment, use the line:
+### Leave virtual environment:
 ```
 deactivate
 ```
 
-## To push to Heroku, use the lines:
+### Push to Heroku:
 ```
 git add .
 git commit -am "make it better"
 git push heroku
 ```
 
-## To push to GitHub, use the lines:
+### Push to GitHub:
 ```
 git add .
 git commit -m "Add existing file"
